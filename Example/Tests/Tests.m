@@ -7,35 +7,37 @@
 //
 
 // https://github.com/kiwi-bdd/Kiwi
+#import <Kiwi/Kiwi.h>
+#import "TKNetworking.h"
+
 
 SPEC_BEGIN(InitialTests)
 
 describe(@"My initial tests", ^{
-
-  context(@"will fail", ^{
-
-      it(@"can do maths", ^{
-          [[@1 should] equal:@2];
-      });
-
-      it(@"can read", ^{
-          [[@"number" should] equal:@"string"];
-      });
-    
-      it(@"will wait and fail", ^{
-          NSObject *object = [[NSObject alloc] init];
-          [[expectFutureValue(object) shouldEventually] receive:@selector(autoContentAccessingProxy)];
-      });
-  });
-
   context(@"will pass", ^{
     
+      beforeEach(^{
+          [TKNetworking initializeWithConfig:@{}];
+      });
+      
       it(@"can do maths", ^{
-        [[@1 should] beLessThan:@23];
+          NSString* testUrl = @"http://www.baidu.com";
+          NSString* baseUrl = @"http://www.163.com";
+          NSURL* url = [NSURL URLWithString:testUrl relativeToURL:[NSURL URLWithString:baseUrl]];
+          NSLog(@"%@",url.absoluteString);
       });
     
       it(@"can read", ^{
-          [[@"team" shouldNot] containString:@"I"];
+          __block id retObj = nil;
+          TKNetworking.GET(@"https://www.baidu.com")
+          .completion(^(id  _Nonnull ret, NSError * _Nonnull error) {
+              retObj = ret;
+              NSLog(@"错误信息%@",error);
+              NSLog(@"处理结果为%@",ret);
+          })
+          .start();
+          
+         [[expectFutureValue(retObj) shouldEventually] beNonNil];
       });  
   });
   

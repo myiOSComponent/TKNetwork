@@ -22,6 +22,9 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		A749451B1F595CAA00BF61FA /* TKNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = A749451A1F595CAA00BF61FA /* TKNetwork.m */; };
+		A749451E1F59614900BF61FA /* TKNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = A749451D1F59614900BF61FA /* TKNetworking.m */; };
+		A74945211F59690100BF61FA /* TKNetworkUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = A74945201F59690100BF61FA /* TKNetworkUpload.m */; };
 		B7F4869684AA5765AFBBD7C8 /* Pods_TKNetwork_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99CF78555E25C4D8AF452C2 /* Pods_TKNetwork_Tests.framework */; };
 		D6E0793B0FF241138B16F063 /* Pods_TKNetwork_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B68935DA87D98482177E57 /* Pods_TKNetwork_Example.framework */; };
 /* End PBXBuildFile section */
@@ -37,7 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5A2617BB4718C9D1C9833D05 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		5A2617BB4718C9D1C9833D05 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* TKNetwork_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TKNetwork_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -57,15 +60,21 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		6C662DF234F66C87A67EDF6A /* TKNetwork.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = TKNetwork.podspec; path = ../TKNetwork.podspec; sourceTree = "<group>"; };
+		6C662DF234F66C87A67EDF6A /* TKNetwork.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TKNetwork.podspec; path = ../TKNetwork.podspec; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A74945191F595CAA00BF61FA /* TKNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKNetwork.h; sourceTree = "<group>"; };
+		A749451A1F595CAA00BF61FA /* TKNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKNetwork.m; sourceTree = "<group>"; };
+		A749451C1F59614900BF61FA /* TKNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKNetworking.h; sourceTree = "<group>"; };
+		A749451D1F59614900BF61FA /* TKNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKNetworking.m; sourceTree = "<group>"; };
+		A749451F1F59690100BF61FA /* TKNetworkUpload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKNetworkUpload.h; sourceTree = "<group>"; };
+		A74945201F59690100BF61FA /* TKNetworkUpload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKNetworkUpload.m; sourceTree = "<group>"; };
 		B897983D22604580438B8983 /* Pods-TKNetwork_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TKNetwork_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TKNetwork_Tests/Pods-TKNetwork_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CD51A48A49E2ACC578B3B5A1 /* Pods-TKNetwork_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TKNetwork_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TKNetwork_Tests/Pods-TKNetwork_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D8943BEA7D7061CA2A32A801 /* Pods-TKNetwork_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TKNetwork_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-TKNetwork_Example/Pods-TKNetwork_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D99CF78555E25C4D8AF452C2 /* Pods_TKNetwork_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TKNetwork_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7B68935DA87D98482177E57 /* Pods_TKNetwork_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TKNetwork_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F253928E6A0F32438E1BCCA4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F253928E6A0F32438E1BCCA4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		FDBF035DC90EBA3F3EBC942F /* Pods-TKNetwork_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TKNetwork_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TKNetwork_Example/Pods-TKNetwork_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -140,6 +149,12 @@
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				A74945191F595CAA00BF61FA /* TKNetwork.h */,
+				A749451A1F595CAA00BF61FA /* TKNetwork.m */,
+				A749451C1F59614900BF61FA /* TKNetworking.h */,
+				A749451D1F59614900BF61FA /* TKNetworking.m */,
+				A749451F1F59690100BF61FA /* TKNetworkUpload.h */,
+				A74945201F59690100BF61FA /* TKNetworkUpload.m */,
 			);
 			name = "Example for TKNetwork";
 			path = TKNetwork;
@@ -322,10 +337,18 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TKNetwork_Example/Pods-TKNetwork_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/TKDataAnalysisCategory/TKDataAnalysisCategory.framework",
+				"${BUILT_PRODUCTS_DIR}/TKMiddleware/TKMiddleware.framework",
+				"${BUILT_PRODUCTS_DIR}/TKModelCategory/TKModelCategory.framework",
 				"${BUILT_PRODUCTS_DIR}/TKNetwork/TKNetwork.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TKDataAnalysisCategory.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TKMiddleware.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TKModelCategory.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TKNetwork.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -408,9 +431,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A74945211F59690100BF61FA /* TKNetworkUpload.m in Sources */,
 				6003F59E195388D20070C39A /* TKAppDelegate.m in Sources */,
+				A749451E1F59614900BF61FA /* TKNetworking.m in Sources */,
 				6003F5A7195388D20070C39A /* TKViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				A749451B1F595CAA00BF61FA /* TKNetwork.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,33 @@
+{
+  "name": "TKNetwork",
+  "version": "0.1.0",
+  "summary": "A short description of TKNetwork.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/512869343@qq.com/TKNetwork",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "512869343@qq.com": "512869343@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/512869343@qq.com/TKNetwork.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "TKNetwork/Classes/**/*",
+  "dependencies": {
+    "TKDataAnalysisCategory": [
+      "~> 0.0.1"
+    ],
+    "AFNetworking": [
+
+    ],
+    "TKModelCategory": [
+      "~> 0.0.13"
+    ]
+  }
+}
